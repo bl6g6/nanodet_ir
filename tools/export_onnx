@@ -1,0 +1,4 @@
+#!/bin/bash
+python3 export_onnx.py --cfg_path  ../config/nanodet-m-pose.yml  --model_path ../workspace/nanodet_m_pose_Adam/model_best/model_best.ckpt  --input_shape 320,320 --out_path ../mine_model/masike_nanodet_V20211214.onnx
+
+python3 -m onnxsim ../mine_model/masike_nanodet_V20211214.onnx  ../mine_model/masike_nanodet_V20211214_sim.onnx  

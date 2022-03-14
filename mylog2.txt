@@ -1,0 +1,210 @@
+nohup: ignoring input
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(train.py:66377): Gdk-CRITICAL **: 11:25:50.141: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/metrics/__init__.py:44: LightningDeprecationWarning: `pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package (https://github.com/PyTorchLightning/metrics) since v1.3 and will be removed in v1.5
+  "`pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package"
+[1m[35m[root][0m[34m[01-24 11:25:50][0m[32mINFO:[0m[37mUsing Tensorboard, logs will be saved in workspace/nanodet_pose/logs[0m
+[1m[35m[root][0m[34m[01-24 11:25:50][0m[32mINFO:[0m[37mSetting up data...[0m
+[1m[35m[root][0m[34m[01-24 11:25:50][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[01-24 11:25:50][0m[32mINFO:[0m[37mFound 11720 annotation files.[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mLoad 11720 xml files and 38986 boxes[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mDone (t=1.26s)[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mFound 1020 annotation files.[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mLoad 1020 xml files and 3347 boxes[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mDone (t=0.11s)[0m
+[1m[35m[root][0m[34m[01-24 11:25:51][0m[32mINFO:[0m[37mCreating model...[0m
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2]
+
+  | Name  | Type             | Params
+-------------------------------------------
+0 | model | OneStageDetector | 82.8 K
+-------------------------------------------
+82.8 K    Trainable params
+0         Non-trainable params
+82.8 K    Total params
+0.331     Total estimated model params size (MB)
+creating index...
+index created!
+creating index...
+index created!
+******************************************************
+
+*****************model size is: 0.25x *****************
+
+
+*****************input_channels is: 1 *****************
+
+******************************************************
+
+init weights...
+Finish initialize Lite GFL Head.
+
+  ********** Optimizer  name: Adam ! ! ! *********** 
+
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3103: UserWarning: The default behavior for interpolate/upsample with float scale_factor changed in 1.6.0 to align with other frameworks/libraries, and now uses scale_factor directly, instead of relying on the computed output size. If you wish to restore the old behavior, please set recompute_scale_factor=True. See the documentation of nn.Upsample for details. 
+  warnings.warn("The default behavior for interpolate/upsample with float scale_factor changed "
+[1m[35m[root][0m[34m[01-24 11:26:14][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter0(0)| lr:1.00e-03| loss_qfl:0.2392| loss_bbox:1.4609| loss_dfl:0.5196| [0m
+[1m[35m[root][0m[34m[01-24 11:26:27][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter10(10)| lr:1.30e-03| loss_qfl:0.3698| loss_bbox:1.1635| loss_dfl:0.4231| [0m
+[1m[35m[root][0m[34m[01-24 11:26:36][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter20(20)| lr:1.60e-03| loss_qfl:0.2579| loss_bbox:1.0886| loss_dfl:0.3952| [0m
+[1m[35m[root][0m[34m[01-24 11:26:46][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter30(30)| lr:1.90e-03| loss_qfl:0.2506| loss_bbox:1.0341| loss_dfl:0.3792| [0m
+[1m[35m[root][0m[34m[01-24 11:27:15][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter40(3)| lr:2.20e-03| loss_qfl:0.2610| loss_bbox:0.9747| loss_dfl:0.3529| [0m
+[1m[35m[root][0m[34m[01-24 11:27:26][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter50(13)| lr:2.50e-03| loss_qfl:0.2904| loss_bbox:0.8804| loss_dfl:0.3344| [0m
+[1m[35m[root][0m[34m[01-24 11:27:35][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter60(23)| lr:2.80e-03| loss_qfl:0.2680| loss_bbox:0.8495| loss_dfl:0.3157| [0m
+[1m[35m[root][0m[34m[01-24 11:27:44][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter70(33)| lr:3.10e-03| loss_qfl:0.2735| loss_bbox:0.7848| loss_dfl:0.3000| [0m
+[1m[35m[root][0m[34m[01-24 11:28:19][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter80(6)| lr:3.40e-03| loss_qfl:0.2960| loss_bbox:0.7581| loss_dfl:0.2927| [0m
+[1m[35m[root][0m[34m[01-24 11:28:27][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter90(16)| lr:3.70e-03| loss_qfl:0.2870| loss_bbox:0.7479| loss_dfl:0.2878| [0m
+[1m[35m[root][0m[34m[01-24 11:28:38][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter100(26)| lr:4.00e-03| loss_qfl:0.2974| loss_bbox:0.7016| loss_dfl:0.2738| [0m
+[1m[35m[root][0m[34m[01-24 11:28:48][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter110(36)| lr:4.30e-03| loss_qfl:0.2995| loss_bbox:0.7119| loss_dfl:0.2737| [0m
+[1m[35m[root][0m[34m[01-24 11:29:21][0m[32mINFO:[0m[37mTrain|Epoch4/1000|Iter120(9)| lr:4.60e-03| loss_qfl:0.2816| loss_bbox:0.6812| loss_dfl:0.2646| [0m
+[1m[35m[root][0m[34m[01-24 11:29:30][0m[32mINFO:[0m[37mTrain|Epoch4/1000|Iter130(19)| lr:4.90e-03| loss_qfl:0.2889| loss_bbox:0.6886| loss_dfl:0.2671| [0m
+[1m[35m[root][0m[34m[01-24 11:29:41][0m[32mINFO:[0m[37mTrain|Epoch4/1000|Iter140(29)| lr:5.20e-03| loss_qfl:0.2827| loss_bbox:0.6654| loss_dfl:0.2605| [0m
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/trainer/trainer.py:895: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn('Detected KeyboardInterrupt, attempting graceful shutdown...')
+nohup: ignoring input
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(train.py:72445): Gdk-CRITICAL **: 11:46:14.353: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/metrics/__init__.py:44: LightningDeprecationWarning: `pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package (https://github.com/PyTorchLightning/metrics) since v1.3 and will be removed in v1.5
+  "`pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package"
+[1m[35m[root][0m[34m[01-24 11:46:14][0m[32mINFO:[0m[37mUsing Tensorboard, logs will be saved in workspace/nanodet_pose/logs[0m
+[1m[35m[root][0m[34m[01-24 11:46:14][0m[32mINFO:[0m[37mSetting up data...[0m
+[1m[35m[root][0m[34m[01-24 11:46:14][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[01-24 11:46:14][0m[32mINFO:[0m[37mFound 11720 annotation files.[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mLoad 11720 xml files and 38986 boxes[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mDone (t=0.87s)[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mFound 1020 annotation files.[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mLoad 1020 xml files and 3347 boxes[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mDone (t=0.07s)[0m
+[1m[35m[root][0m[34m[01-24 11:46:15][0m[32mINFO:[0m[37mCreating model...[0m
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2]
+
+  | Name  | Type             | Params
+-------------------------------------------
+0 | model | OneStageDetector | 82.8 K
+-------------------------------------------
+82.8 K    Trainable params
+0         Non-trainable params
+82.8 K    Total params
+0.331     Total estimated model params size (MB)
+creating index...
+index created!
+creating index...
+index created!
+******************************************************
+
+*****************model size is: 0.25x *****************
+
+
+*****************input_channels is: 1 *****************
+
+******************************************************
+
+init weights...
+Finish initialize Lite GFL Head.
+
+  ********** Optimizer  name: Adam ! ! ! *********** 
+
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3103: UserWarning: The default behavior for interpolate/upsample with float scale_factor changed in 1.6.0 to align with other frameworks/libraries, and now uses scale_factor directly, instead of relying on the computed output size. If you wish to restore the old behavior, please set recompute_scale_factor=True. See the documentation of nn.Upsample for details. 
+  warnings.warn("The default behavior for interpolate/upsample with float scale_factor changed "
+[1m[35m[root][0m[34m[01-24 11:46:32][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter0(0)| lr:1.00e-03| loss_qfl:0.2403| loss_bbox:1.4576| loss_dfl:0.5205| [0m
+[1m[35m[root][0m[34m[01-24 11:46:47][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter10(10)| lr:1.30e-03| loss_qfl:0.3907| loss_bbox:1.1469| loss_dfl:0.4199| [0m
+[1m[35m[root][0m[34m[01-24 11:46:56][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter20(20)| lr:1.60e-03| loss_qfl:0.2465| loss_bbox:1.0972| loss_dfl:0.3989| [0m
+[1m[35m[root][0m[34m[01-24 11:47:05][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter30(30)| lr:1.90e-03| loss_qfl:0.2378| loss_bbox:1.0522| loss_dfl:0.3846| [0m
+[1m[35m[root][0m[34m[01-24 11:47:33][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter40(3)| lr:2.20e-03| loss_qfl:0.2479| loss_bbox:0.9708| loss_dfl:0.3594| [0m
+[1m[35m[root][0m[34m[01-24 11:47:43][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter50(13)| lr:2.50e-03| loss_qfl:0.2725| loss_bbox:0.9006| loss_dfl:0.3367| [0m
+[1m[35m[root][0m[34m[01-24 11:47:52][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter60(23)| lr:2.80e-03| loss_qfl:0.2655| loss_bbox:0.8828| loss_dfl:0.3244| [0m
+[1m[35m[root][0m[34m[01-24 11:48:02][0m[32mINFO:[0m[37mTrain|Epoch2/1000|Iter70(33)| lr:3.10e-03| loss_qfl:0.2884| loss_bbox:0.8565| loss_dfl:0.3189| [0m
+[1m[35m[root][0m[34m[01-24 11:48:32][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter80(6)| lr:3.40e-03| loss_qfl:0.2830| loss_bbox:0.8074| loss_dfl:0.3073| [0m
+[1m[35m[root][0m[34m[01-24 11:48:41][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter90(16)| lr:3.70e-03| loss_qfl:0.2868| loss_bbox:0.7823| loss_dfl:0.3016| [0m
+[1m[35m[root][0m[34m[01-24 11:48:51][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter100(26)| lr:4.00e-03| loss_qfl:0.2884| loss_bbox:0.7379| loss_dfl:0.2849| [0m
+[1m[35m[root][0m[34m[01-24 11:49:00][0m[32mINFO:[0m[37mTrain|Epoch3/1000|Iter110(36)| lr:4.30e-03| loss_qfl:0.2968| loss_bbox:0.7149| loss_dfl:0.2801| [0m
+[1m[35m[root][0m[34m[01-24 11:49:30][0m[32mINFO:[0m[37mTrain|Epoch4/1000|Iter120(9)| lr:4.60e-03| loss_qfl:0.2812| loss_bbox:0.7121| loss_dfl:0.2765| [0m
+[1m[35m[root][0m[34m[01-24 11:49:39][0m[32mINFO:[0m[37mTrain|Epoch4/1000|Iter130(19)| lr:4.90e-03| loss_qfl:0.2915| loss_bbox:0.6791| loss_dfl:0.2698| [0m
+[1m[35m[root][0m[34m[01-24 11:49:49][0m[32mINFO:[0m[37mTrain|Epoch4/1000|Iter140(29)| lr:5.20e-03| loss_qfl:0.2939| loss_bbox:0.6684| loss_dfl:0.2629| [0m
+[1m[35m[root][0m[34m[01-24 11:50:17][0m[32mINFO:[0m[37mTrain|Epoch5/1000|Iter150(2)| lr:5.50e-03| loss_qfl:0.2874| loss_bbox:0.6885| loss_dfl:0.2698| [0m
+[1m[35m[root][0m[34m[01-24 11:50:28][0m[32mINFO:[0m[37mTrain|Epoch5/1000|Iter160(12)| lr:5.80e-03| loss_qfl:0.2703| loss_bbox:0.6639| loss_dfl:0.2604| [0m
+[1m[35m[root][0m[34m[01-24 11:50:37][0m[32mINFO:[0m[37mTrain|Epoch5/1000|Iter170(22)| lr:6.10e-03| loss_qfl:0.2897| loss_bbox:0.6293| loss_dfl:0.2520| [0m
+[1m[35m[root][0m[34m[01-24 11:50:46][0m[32mINFO:[0m[37mTrain|Epoch5/1000|Iter180(32)| lr:6.40e-03| loss_qfl:0.2952| loss_bbox:0.6210| loss_dfl:0.2492| [0m
+[1m[35m[root][0m[34m[01-24 11:51:16][0m[32mINFO:[0m[37mTrain|Epoch6/1000|Iter190(5)| lr:6.70e-03| loss_qfl:0.2897| loss_bbox:0.6367| loss_dfl:0.2518| [0m
+[1m[35m[root][0m[34m[01-24 11:51:25][0m[32mINFO:[0m[37mTrain|Epoch6/1000|Iter200(15)| lr:7.00e-03| loss_qfl:0.3005| loss_bbox:0.6022| loss_dfl:0.2409| [0m
+[1m[35m[root][0m[34m[01-24 11:51:36][0m[32mINFO:[0m[37mTrain|Epoch6/1000|Iter210(25)| lr:7.30e-03| loss_qfl:0.2806| loss_bbox:0.6137| loss_dfl:0.2429| [0m
+[1m[35m[root][0m[34m[01-24 11:51:45][0m[32mINFO:[0m[37mTrain|Epoch6/1000|Iter220(35)| lr:7.60e-03| loss_qfl:0.2713| loss_bbox:0.6143| loss_dfl:0.2429| [0m
+[1m[35m[root][0m[34m[01-24 11:52:15][0m[32mINFO:[0m[37mTrain|Epoch7/1000|Iter230(8)| lr:7.90e-03| loss_qfl:0.2776| loss_bbox:0.6081| loss_dfl:0.2431| [0m
+[1m[35m[root][0m[34m[01-24 11:52:25][0m[32mINFO:[0m[37mTrain|Epoch7/1000|Iter240(18)| lr:8.20e-03| loss_qfl:0.2643| loss_bbox:0.5892| loss_dfl:0.2373| [0m
+[1m[35m[root][0m[34m[01-24 11:52:34][0m[32mINFO:[0m[37mTrain|Epoch7/1000|Iter250(28)| lr:8.50e-03| loss_qfl:0.2664| loss_bbox:0.5776| loss_dfl:0.2356| [0m
+[1m[35m[root][0m[34m[01-24 11:52:59][0m[32mINFO:[0m[37mTrain|Epoch8/1000|Iter260(1)| lr:8.80e-03| loss_qfl:0.2743| loss_bbox:0.5820| loss_dfl:0.2346| [0m
+[1m[35m[root][0m[34m[01-24 11:53:13][0m[32mINFO:[0m[37mTrain|Epoch8/1000|Iter270(11)| lr:9.10e-03| loss_qfl:0.2854| loss_bbox:0.5698| loss_dfl:0.2321| [0m
+[1m[35m[root][0m[34m[01-24 11:53:22][0m[32mINFO:[0m[37mTrain|Epoch8/1000|Iter280(21)| lr:9.40e-03| loss_qfl:0.2653| loss_bbox:0.5775| loss_dfl:0.2343| [0m
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/trainer/trainer.py:895: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn('Detected KeyboardInterrupt, attempting graceful shutdown...')
+nohup: ignoring input
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(train.py:9236): Gdk-CRITICAL **: 17:24:31.391: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/metrics/__init__.py:44: LightningDeprecationWarning: `pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package (https://github.com/PyTorchLightning/metrics) since v1.3 and will be removed in v1.5
+  "`pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package"
+[1m[35m[root][0m[34m[01-24 17:24:31][0m[32mINFO:[0m[37mUsing Tensorboard, logs will be saved in workspace/nanodet_pose/logs[0m
+[1m[35m[root][0m[34m[01-24 17:24:31][0m[32mINFO:[0m[37mSetting up data...[0m
+[1m[35m[root][0m[34m[01-24 17:24:31][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[01-24 17:24:31][0m[32mINFO:[0m[37mFound 11720 annotation files.[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mLoad 11720 xml files and 38986 boxes[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mDone (t=0.86s)[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mFound 1020 annotation files.[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mLoad 1020 xml files and 3347 boxes[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mDone (t=0.07s)[0m
+[1m[35m[root][0m[34m[01-24 17:24:32][0m[32mINFO:[0m[37mCreating model...[0m
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2]
+
+  | Name  | Type             | Params
+-------------------------------------------
+0 | model | OneStageDetector | 82.8 K
+-------------------------------------------
+82.8 K    Trainable params
+0         Non-trainable params
+82.8 K    Total params
+0.331     Total estimated model params size (MB)
+creating index...
+index created!
+creating index...
+index created!
+******************************************************
+
+*****************model size is: 0.25x *****************
+
+
+*****************input_channels is: 1 *****************
+
+******************************************************
+
+init weights...
+Finish initialize Lite GFL Head.
+
+  ********** Optimizer  name: Adam ! ! ! *********** 
+
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3103: UserWarning: The default behavior for interpolate/upsample with float scale_factor changed in 1.6.0 to align with other frameworks/libraries, and now uses scale_factor directly, instead of relying on the computed output size. If you wish to restore the old behavior, please set recompute_scale_factor=True. See the documentation of nn.Upsample for details. 
+  warnings.warn("The default behavior for interpolate/upsample with float scale_factor changed "
+[1m[35m[root][0m[34m[01-24 17:24:50][0m[32mINFO:[0m[37mTrain|Epoch1/1000|Iter0(0)| lr:1.00e-03| loss_qfl:0.2493| loss_bbox:1.4573| loss_dfl:0.5202| [0m
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/trainer/trainer.py:895: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn('Detected KeyboardInterrupt, attempting graceful shutdown...')

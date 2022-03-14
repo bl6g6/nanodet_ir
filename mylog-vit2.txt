@@ -1,0 +1,222 @@
+nohup: ignoring input
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(train.py:6979): Gdk-CRITICAL **: 14:14:01.872: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/metrics/__init__.py:44: LightningDeprecationWarning: `pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package (https://github.com/PyTorchLightning/metrics) since v1.3 and will be removed in v1.5
+  "`pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package"
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mUsing Tensorboard, logs will be saved in workspace/nanodet_m_pose_Adam_vit/logs[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mSetting up data...[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mFound 11720 annotation files.[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mLoad 11720 xml files and 38986 boxes[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mDone (t=0.90s)[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mloading annotations into memory...[0m
+[1m[35m[root][0m[34m[12-23 14:14:02][0m[32mINFO:[0m[37mFound 1020 annotation files.[0m
+[1m[35m[root][0m[34m[12-23 14:14:03][0m[32mINFO:[0m[37mLoad 1020 xml files and 3347 boxes[0m
+[1m[35m[root][0m[34m[12-23 14:14:03][0m[32mINFO:[0m[37mDone (t=0.07s)[0m
+[1m[35m[root][0m[34m[12-23 14:14:03][0m[32mINFO:[0m[37mCreating model...[0m
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+initializing ddp: GLOBAL_RANK: 0, MEMBER: 1/1
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2]
+
+  | Name  | Type             | Params
+-------------------------------------------
+0 | model | OneStageDetector | 561 K 
+-------------------------------------------
+561 K     Trainable params
+0         Non-trainable params
+561 K     Total params
+2.248     Total estimated model params size (MB)
+creating index...
+index created!
+creating index...
+index created!
+Finish initialize Lite GFL Head.
+
+  ********** Optimizer  name: Adam ! ! ! *********** 
+
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/usr/local/lib/python3.6/dist-packages/torch/nn/functional.py:3103: UserWarning: The default behavior for interpolate/upsample with float scale_factor changed in 1.6.0 to align with other frameworks/libraries, and now uses scale_factor directly, instead of relying on the computed output size. If you wish to restore the old behavior, please set recompute_scale_factor=True. See the documentation of nn.Upsample for details. 
+  warnings.warn("The default behavior for interpolate/upsample with float scale_factor changed "
+[1m[35m[root][0m[34m[12-23 14:14:11][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter0(0)| lr:1.00e-03| loss_qfl:0.2289| loss_bbox:1.4755| loss_dfl:0.5220| [0m
+[1m[35m[root][0m[34m[12-23 14:14:19][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter10(10)| lr:1.30e-03| loss_qfl:0.4073| loss_bbox:1.1377| loss_dfl:0.4249| [0m
+[1m[35m[root][0m[34m[12-23 14:14:25][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter20(20)| lr:1.60e-03| loss_qfl:0.2316| loss_bbox:1.1299| loss_dfl:0.4027| [0m
+[1m[35m[root][0m[34m[12-23 14:14:31][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter30(30)| lr:1.90e-03| loss_qfl:0.2425| loss_bbox:1.0847| loss_dfl:0.3903| [0m
+[1m[35m[root][0m[34m[12-23 14:14:37][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter40(40)| lr:2.20e-03| loss_qfl:0.2510| loss_bbox:1.0293| loss_dfl:0.3755| [0m
+[1m[35m[root][0m[34m[12-23 14:14:42][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter50(50)| lr:2.50e-03| loss_qfl:0.2529| loss_bbox:1.0128| loss_dfl:0.3646| [0m
+[1m[35m[root][0m[34m[12-23 14:14:50][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter60(60)| lr:2.80e-03| loss_qfl:0.2891| loss_bbox:0.9483| loss_dfl:0.3484| [0m
+[1m[35m[root][0m[34m[12-23 14:14:57][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter70(70)| lr:3.10e-03| loss_qfl:0.2917| loss_bbox:0.9151| loss_dfl:0.3376| [0m
+[1m[35m[root][0m[34m[12-23 14:15:02][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter80(80)| lr:3.40e-03| loss_qfl:0.2808| loss_bbox:0.8394| loss_dfl:0.3143| [0m
+[1m[35m[root][0m[34m[12-23 14:15:09][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter90(90)| lr:3.70e-03| loss_qfl:0.2940| loss_bbox:0.8431| loss_dfl:0.3172| [0m
+[1m[35m[root][0m[34m[12-23 14:15:15][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter100(100)| lr:4.00e-03| loss_qfl:0.2932| loss_bbox:0.8005| loss_dfl:0.3024| [0m
+[1m[35m[root][0m[34m[12-23 14:15:21][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter110(110)| lr:4.30e-03| loss_qfl:0.3068| loss_bbox:0.7625| loss_dfl:0.2978| [0m
+[1m[35m[root][0m[34m[12-23 14:15:27][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter120(120)| lr:4.60e-03| loss_qfl:0.2726| loss_bbox:0.7515| loss_dfl:0.2898| [0m
+[1m[35m[root][0m[34m[12-23 14:15:32][0m[32mINFO:[0m[37mTrain|Epoch1/700|Iter130(130)| lr:4.90e-03| loss_qfl:0.2957| loss_bbox:0.7564| loss_dfl:0.2873| [0m
+[1m[35m[root][0m[34m[12-23 14:15:43][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter140(1)| lr:5.20e-03| loss_qfl:0.2758| loss_bbox:0.7377| loss_dfl:0.2848| [0m
+[1m[35m[root][0m[34m[12-23 14:15:49][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter150(11)| lr:5.50e-03| loss_qfl:0.2970| loss_bbox:0.6893| loss_dfl:0.2706| [0m
+[1m[35m[root][0m[34m[12-23 14:15:55][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter160(21)| lr:5.80e-03| loss_qfl:0.3051| loss_bbox:0.6593| loss_dfl:0.2586| [0m
+[1m[35m[root][0m[34m[12-23 14:16:02][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter170(31)| lr:6.10e-03| loss_qfl:0.2754| loss_bbox:0.6891| loss_dfl:0.2642| [0m
+[1m[35m[root][0m[34m[12-23 14:16:08][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter180(41)| lr:6.40e-03| loss_qfl:0.2756| loss_bbox:0.7091| loss_dfl:0.2718| [0m
+[1m[35m[root][0m[34m[12-23 14:16:14][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter190(51)| lr:6.70e-03| loss_qfl:0.2641| loss_bbox:0.6668| loss_dfl:0.2626| [0m
+[1m[35m[root][0m[34m[12-23 14:16:20][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter200(61)| lr:7.00e-03| loss_qfl:0.2985| loss_bbox:0.6519| loss_dfl:0.2571| [0m
+[1m[35m[root][0m[34m[12-23 14:16:26][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter210(71)| lr:7.30e-03| loss_qfl:0.3055| loss_bbox:0.6418| loss_dfl:0.2502| [0m
+[1m[35m[root][0m[34m[12-23 14:16:33][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter220(81)| lr:7.60e-03| loss_qfl:0.2882| loss_bbox:0.6428| loss_dfl:0.2505| [0m
+[1m[35m[root][0m[34m[12-23 14:16:40][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter230(91)| lr:7.90e-03| loss_qfl:0.3030| loss_bbox:0.6456| loss_dfl:0.2531| [0m
+[1m[35m[root][0m[34m[12-23 14:16:46][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter240(101)| lr:8.20e-03| loss_qfl:0.2910| loss_bbox:0.6324| loss_dfl:0.2533| [0m
+[1m[35m[root][0m[34m[12-23 14:16:51][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter250(111)| lr:8.50e-03| loss_qfl:0.2951| loss_bbox:0.6070| loss_dfl:0.2430| [0m
+[1m[35m[root][0m[34m[12-23 14:16:56][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter260(121)| lr:8.80e-03| loss_qfl:0.2848| loss_bbox:0.6345| loss_dfl:0.2479| [0m
+[1m[35m[root][0m[34m[12-23 14:17:01][0m[32mINFO:[0m[37mTrain|Epoch2/700|Iter270(131)| lr:9.10e-03| loss_qfl:0.3174| loss_bbox:0.6065| loss_dfl:0.2416| [0m
+[1m[35m[root][0m[34m[12-23 14:17:13][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter280(2)| lr:9.40e-03| loss_qfl:0.3051| loss_bbox:0.6276| loss_dfl:0.2497| [0m
+[1m[35m[root][0m[34m[12-23 14:17:20][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter290(12)| lr:9.70e-03| loss_qfl:0.3131| loss_bbox:0.5766| loss_dfl:0.2400| [0m
+[1m[35m[root][0m[34m[12-23 14:17:26][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter300(22)| lr:1.00e-02| loss_qfl:0.3025| loss_bbox:0.6037| loss_dfl:0.2442| [0m
+[1m[35m[root][0m[34m[12-23 14:17:32][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter310(32)| lr:1.00e-02| loss_qfl:0.2823| loss_bbox:0.5764| loss_dfl:0.2321| [0m
+[1m[35m[root][0m[34m[12-23 14:17:39][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter320(42)| lr:1.00e-02| loss_qfl:0.2629| loss_bbox:0.6021| loss_dfl:0.2378| [0m
+[1m[35m[root][0m[34m[12-23 14:17:45][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter330(52)| lr:1.00e-02| loss_qfl:0.2788| loss_bbox:0.6009| loss_dfl:0.2357| [0m
+[1m[35m[root][0m[34m[12-23 14:17:51][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter340(62)| lr:1.00e-02| loss_qfl:0.2954| loss_bbox:0.6024| loss_dfl:0.2413| [0m
+[1m[35m[root][0m[34m[12-23 14:17:57][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter350(72)| lr:1.00e-02| loss_qfl:0.2806| loss_bbox:0.5879| loss_dfl:0.2429| [0m
+[1m[35m[root][0m[34m[12-23 14:18:04][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter360(82)| lr:1.00e-02| loss_qfl:0.3061| loss_bbox:0.5899| loss_dfl:0.2358| [0m
+[1m[35m[root][0m[34m[12-23 14:18:11][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter370(92)| lr:1.00e-02| loss_qfl:0.2989| loss_bbox:0.5753| loss_dfl:0.2360| [0m
+[1m[35m[root][0m[34m[12-23 14:18:17][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter380(102)| lr:1.00e-02| loss_qfl:0.2736| loss_bbox:0.5830| loss_dfl:0.2335| [0m
+[1m[35m[root][0m[34m[12-23 14:18:23][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter390(112)| lr:1.00e-02| loss_qfl:0.2949| loss_bbox:0.5750| loss_dfl:0.2336| [0m
+[1m[35m[root][0m[34m[12-23 14:18:28][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter400(122)| lr:1.00e-02| loss_qfl:0.2670| loss_bbox:0.5552| loss_dfl:0.2282| [0m
+[1m[35m[root][0m[34m[12-23 14:18:34][0m[32mINFO:[0m[37mTrain|Epoch3/700|Iter410(132)| lr:1.00e-02| loss_qfl:0.2816| loss_bbox:0.5807| loss_dfl:0.2366| [0m
+[1m[35m[root][0m[34m[12-23 14:18:46][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter420(3)| lr:1.00e-02| loss_qfl:0.2698| loss_bbox:0.5569| loss_dfl:0.2241| [0m
+[1m[35m[root][0m[34m[12-23 14:18:52][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter430(13)| lr:1.00e-02| loss_qfl:0.2497| loss_bbox:0.5695| loss_dfl:0.2288| [0m
+[1m[35m[root][0m[34m[12-23 14:18:58][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter440(23)| lr:1.00e-02| loss_qfl:0.2981| loss_bbox:0.5335| loss_dfl:0.2233| [0m
+[1m[35m[root][0m[34m[12-23 14:19:04][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter450(33)| lr:1.00e-02| loss_qfl:0.2741| loss_bbox:0.5707| loss_dfl:0.2310| [0m
+[1m[35m[root][0m[34m[12-23 14:19:10][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter460(43)| lr:1.00e-02| loss_qfl:0.2787| loss_bbox:0.5621| loss_dfl:0.2296| [0m
+[1m[35m[root][0m[34m[12-23 14:19:16][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter470(53)| lr:1.00e-02| loss_qfl:0.2712| loss_bbox:0.5428| loss_dfl:0.2221| [0m
+[1m[35m[root][0m[34m[12-23 14:19:22][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter480(63)| lr:1.00e-02| loss_qfl:0.2834| loss_bbox:0.5749| loss_dfl:0.2339| [0m
+[1m[35m[root][0m[34m[12-23 14:19:28][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter490(73)| lr:1.00e-02| loss_qfl:0.2674| loss_bbox:0.5323| loss_dfl:0.2232| [0m
+[1m[35m[root][0m[34m[12-23 14:19:34][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter500(83)| lr:1.00e-02| loss_qfl:0.2763| loss_bbox:0.5367| loss_dfl:0.2191| [0m
+[1m[35m[root][0m[34m[12-23 14:19:40][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter510(93)| lr:1.00e-02| loss_qfl:0.2843| loss_bbox:0.5824| loss_dfl:0.2367| [0m
+[1m[35m[root][0m[34m[12-23 14:19:46][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter520(103)| lr:1.00e-02| loss_qfl:0.2607| loss_bbox:0.5268| loss_dfl:0.2243| [0m
+[1m[35m[root][0m[34m[12-23 14:19:52][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter530(113)| lr:1.00e-02| loss_qfl:0.2738| loss_bbox:0.5191| loss_dfl:0.2201| [0m
+[1m[35m[root][0m[34m[12-23 14:19:57][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter540(123)| lr:1.00e-02| loss_qfl:0.2718| loss_bbox:0.5143| loss_dfl:0.2196| [0m
+[1m[35m[root][0m[34m[12-23 14:20:02][0m[32mINFO:[0m[37mTrain|Epoch4/700|Iter550(133)| lr:1.00e-02| loss_qfl:0.2585| loss_bbox:0.5270| loss_dfl:0.2211| [0m
+[1m[35m[root][0m[34m[12-23 14:20:14][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter560(4)| lr:1.00e-02| loss_qfl:0.2846| loss_bbox:0.4849| loss_dfl:0.2107| [0m
+[1m[35m[root][0m[34m[12-23 14:20:21][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter570(14)| lr:1.00e-02| loss_qfl:0.2750| loss_bbox:0.5205| loss_dfl:0.2180| [0m
+[1m[35m[root][0m[34m[12-23 14:20:28][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter580(24)| lr:1.00e-02| loss_qfl:0.2808| loss_bbox:0.5544| loss_dfl:0.2242| [0m
+[1m[35m[root][0m[34m[12-23 14:20:34][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter590(34)| lr:1.00e-02| loss_qfl:0.2851| loss_bbox:0.5424| loss_dfl:0.2257| [0m
+[1m[35m[root][0m[34m[12-23 14:20:41][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter600(44)| lr:1.00e-02| loss_qfl:0.2711| loss_bbox:0.5010| loss_dfl:0.2177| [0m
+[1m[35m[root][0m[34m[12-23 14:20:49][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter610(54)| lr:1.00e-02| loss_qfl:0.2777| loss_bbox:0.5313| loss_dfl:0.2245| [0m
+[1m[35m[root][0m[34m[12-23 14:20:55][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter620(64)| lr:1.00e-02| loss_qfl:0.2946| loss_bbox:0.4794| loss_dfl:0.2101| [0m
+[1m[35m[root][0m[34m[12-23 14:21:01][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter630(74)| lr:1.00e-02| loss_qfl:0.2797| loss_bbox:0.4978| loss_dfl:0.2151| [0m
+[1m[35m[root][0m[34m[12-23 14:21:07][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter640(84)| lr:1.00e-02| loss_qfl:0.2977| loss_bbox:0.4744| loss_dfl:0.2092| [0m
+[1m[35m[root][0m[34m[12-23 14:21:13][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter650(94)| lr:1.00e-02| loss_qfl:0.2846| loss_bbox:0.5216| loss_dfl:0.2167| [0m
+[1m[35m[root][0m[34m[12-23 14:21:19][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter660(104)| lr:1.00e-02| loss_qfl:0.2669| loss_bbox:0.5376| loss_dfl:0.2220| [0m
+[1m[35m[root][0m[34m[12-23 14:21:24][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter670(114)| lr:1.00e-02| loss_qfl:0.2769| loss_bbox:0.5140| loss_dfl:0.2174| [0m
+[1m[35m[root][0m[34m[12-23 14:21:29][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter680(124)| lr:1.00e-02| loss_qfl:0.2761| loss_bbox:0.5332| loss_dfl:0.2202| [0m
+[1m[35m[root][0m[34m[12-23 14:21:34][0m[32mINFO:[0m[37mTrain|Epoch5/700|Iter690(134)| lr:1.00e-02| loss_qfl:0.2507| loss_bbox:0.4971| loss_dfl:0.2154| [0m
+[1m[35m[root][0m[34m[12-23 14:21:46][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter700(5)| lr:1.00e-02| loss_qfl:0.2799| loss_bbox:0.5090| loss_dfl:0.2221| [0m
+[1m[35m[root][0m[34m[12-23 14:21:53][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter710(15)| lr:1.00e-02| loss_qfl:0.2497| loss_bbox:0.4700| loss_dfl:0.2050| [0m
+[1m[35m[root][0m[34m[12-23 14:22:00][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter720(25)| lr:1.00e-02| loss_qfl:0.2679| loss_bbox:0.4958| loss_dfl:0.2089| [0m
+[1m[35m[root][0m[34m[12-23 14:22:06][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter730(35)| lr:1.00e-02| loss_qfl:0.2679| loss_bbox:0.5052| loss_dfl:0.2188| [0m
+[1m[35m[root][0m[34m[12-23 14:22:12][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter740(45)| lr:1.00e-02| loss_qfl:0.2551| loss_bbox:0.4824| loss_dfl:0.2097| [0m
+[1m[35m[root][0m[34m[12-23 14:22:18][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter750(55)| lr:1.00e-02| loss_qfl:0.2703| loss_bbox:0.4965| loss_dfl:0.2108| [0m
+[1m[35m[root][0m[34m[12-23 14:22:25][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter760(65)| lr:1.00e-02| loss_qfl:0.2963| loss_bbox:0.4849| loss_dfl:0.2075| [0m
+[1m[35m[root][0m[34m[12-23 14:22:31][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter770(75)| lr:1.00e-02| loss_qfl:0.2777| loss_bbox:0.4909| loss_dfl:0.2134| [0m
+[1m[35m[root][0m[34m[12-23 14:22:37][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter780(85)| lr:1.00e-02| loss_qfl:0.2745| loss_bbox:0.4770| loss_dfl:0.2097| [0m
+[1m[35m[root][0m[34m[12-23 14:22:43][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter790(95)| lr:1.00e-02| loss_qfl:0.2793| loss_bbox:0.5161| loss_dfl:0.2171| [0m
+[1m[35m[root][0m[34m[12-23 14:22:49][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter800(105)| lr:1.00e-02| loss_qfl:0.2546| loss_bbox:0.5198| loss_dfl:0.2184| [0m
+[1m[35m[root][0m[34m[12-23 14:22:54][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter810(115)| lr:1.00e-02| loss_qfl:0.2641| loss_bbox:0.4637| loss_dfl:0.2077| [0m
+[1m[35m[root][0m[34m[12-23 14:22:59][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter820(125)| lr:1.00e-02| loss_qfl:0.2679| loss_bbox:0.4930| loss_dfl:0.2119| [0m
+[1m[35m[root][0m[34m[12-23 14:23:04][0m[32mINFO:[0m[37mTrain|Epoch6/700|Iter830(135)| lr:1.00e-02| loss_qfl:0.2688| loss_bbox:0.4812| loss_dfl:0.2054| [0m
+[1m[35m[root][0m[34m[12-23 14:23:16][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter840(6)| lr:1.00e-02| loss_qfl:0.2830| loss_bbox:0.4754| loss_dfl:0.2110| [0m
+[1m[35m[root][0m[34m[12-23 14:23:23][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter850(16)| lr:1.00e-02| loss_qfl:0.2580| loss_bbox:0.4928| loss_dfl:0.2125| [0m
+[1m[35m[root][0m[34m[12-23 14:23:29][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter860(26)| lr:1.00e-02| loss_qfl:0.2412| loss_bbox:0.4753| loss_dfl:0.2046| [0m
+[1m[35m[root][0m[34m[12-23 14:23:35][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter870(36)| lr:1.00e-02| loss_qfl:0.2725| loss_bbox:0.5063| loss_dfl:0.2136| [0m
+[1m[35m[root][0m[34m[12-23 14:23:41][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter880(46)| lr:1.00e-02| loss_qfl:0.2705| loss_bbox:0.4879| loss_dfl:0.2064| [0m
+[1m[35m[root][0m[34m[12-23 14:23:47][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter890(56)| lr:1.00e-02| loss_qfl:0.2905| loss_bbox:0.5001| loss_dfl:0.2161| [0m
+[1m[35m[root][0m[34m[12-23 14:23:54][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter900(66)| lr:1.00e-02| loss_qfl:0.2527| loss_bbox:0.4736| loss_dfl:0.2062| [0m
+[1m[35m[root][0m[34m[12-23 14:24:00][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter910(76)| lr:1.00e-02| loss_qfl:0.2694| loss_bbox:0.4799| loss_dfl:0.2087| [0m
+[1m[35m[root][0m[34m[12-23 14:24:06][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter920(86)| lr:1.00e-02| loss_qfl:0.2807| loss_bbox:0.4652| loss_dfl:0.2113| [0m
+[1m[35m[root][0m[34m[12-23 14:24:13][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter930(96)| lr:1.00e-02| loss_qfl:0.2808| loss_bbox:0.4569| loss_dfl:0.2016| [0m
+[1m[35m[root][0m[34m[12-23 14:24:19][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter940(106)| lr:1.00e-02| loss_qfl:0.2391| loss_bbox:0.4895| loss_dfl:0.2102| [0m
+[1m[35m[root][0m[34m[12-23 14:24:23][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter950(116)| lr:1.00e-02| loss_qfl:0.2806| loss_bbox:0.4877| loss_dfl:0.2101| [0m
+[1m[35m[root][0m[34m[12-23 14:24:28][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter960(126)| lr:1.00e-02| loss_qfl:0.2592| loss_bbox:0.4513| loss_dfl:0.2009| [0m
+[1m[35m[root][0m[34m[12-23 14:24:33][0m[32mINFO:[0m[37mTrain|Epoch7/700|Iter970(136)| lr:1.00e-02| loss_qfl:0.2769| loss_bbox:0.4642| loss_dfl:0.2074| [0m
+[1m[35m[root][0m[34m[12-23 14:24:45][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter980(7)| lr:1.00e-02| loss_qfl:0.2846| loss_bbox:0.5057| loss_dfl:0.2161| [0m
+[1m[35m[root][0m[34m[12-23 14:24:51][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter990(17)| lr:1.00e-02| loss_qfl:0.2652| loss_bbox:0.4748| loss_dfl:0.2108| [0m
+[1m[35m[root][0m[34m[12-23 14:24:57][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1000(27)| lr:1.00e-02| loss_qfl:0.2658| loss_bbox:0.4729| loss_dfl:0.2111| [0m
+[1m[35m[root][0m[34m[12-23 14:25:03][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1010(37)| lr:1.00e-02| loss_qfl:0.2513| loss_bbox:0.4733| loss_dfl:0.2074| [0m
+[1m[35m[root][0m[34m[12-23 14:25:10][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1020(47)| lr:1.00e-02| loss_qfl:0.2460| loss_bbox:0.4520| loss_dfl:0.2024| [0m
+[1m[35m[root][0m[34m[12-23 14:25:16][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1030(57)| lr:1.00e-02| loss_qfl:0.2770| loss_bbox:0.4451| loss_dfl:0.1994| [0m
+[1m[35m[root][0m[34m[12-23 14:25:23][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1040(67)| lr:1.00e-02| loss_qfl:0.2642| loss_bbox:0.4638| loss_dfl:0.2059| [0m
+[1m[35m[root][0m[34m[12-23 14:25:29][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1050(77)| lr:1.00e-02| loss_qfl:0.2568| loss_bbox:0.4765| loss_dfl:0.2109| [0m
+[1m[35m[root][0m[34m[12-23 14:25:35][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1060(87)| lr:1.00e-02| loss_qfl:0.2626| loss_bbox:0.4843| loss_dfl:0.2063| [0m
+[1m[35m[root][0m[34m[12-23 14:25:42][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1070(97)| lr:1.00e-02| loss_qfl:0.2552| loss_bbox:0.5179| loss_dfl:0.2174| [0m
+[1m[35m[root][0m[34m[12-23 14:25:48][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1080(107)| lr:1.00e-02| loss_qfl:0.2642| loss_bbox:0.4511| loss_dfl:0.2015| [0m
+[1m[35m[root][0m[34m[12-23 14:25:53][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1090(117)| lr:1.00e-02| loss_qfl:0.2751| loss_bbox:0.4811| loss_dfl:0.2106| [0m
+[1m[35m[root][0m[34m[12-23 14:25:58][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1100(127)| lr:1.00e-02| loss_qfl:0.2565| loss_bbox:0.4538| loss_dfl:0.2038| [0m
+[1m[35m[root][0m[34m[12-23 14:26:03][0m[32mINFO:[0m[37mTrain|Epoch8/700|Iter1110(137)| lr:1.00e-02| loss_qfl:0.2815| loss_bbox:0.4679| loss_dfl:0.2088| [0m
+[1m[35m[root][0m[34m[12-23 14:26:16][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1120(8)| lr:1.00e-02| loss_qfl:0.2822| loss_bbox:0.4783| loss_dfl:0.2149| [0m
+[1m[35m[root][0m[34m[12-23 14:26:22][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1130(18)| lr:1.00e-02| loss_qfl:0.2730| loss_bbox:0.4629| loss_dfl:0.2082| [0m
+[1m[35m[root][0m[34m[12-23 14:26:29][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1140(28)| lr:1.00e-02| loss_qfl:0.2564| loss_bbox:0.4509| loss_dfl:0.1997| [0m
+[1m[35m[root][0m[34m[12-23 14:26:35][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1150(38)| lr:1.00e-02| loss_qfl:0.2536| loss_bbox:0.4636| loss_dfl:0.2048| [0m
+[1m[35m[root][0m[34m[12-23 14:26:41][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1160(48)| lr:1.00e-02| loss_qfl:0.2446| loss_bbox:0.4635| loss_dfl:0.2076| [0m
+[1m[35m[root][0m[34m[12-23 14:26:47][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1170(58)| lr:1.00e-02| loss_qfl:0.2553| loss_bbox:0.4554| loss_dfl:0.2060| [0m
+[1m[35m[root][0m[34m[12-23 14:26:55][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1180(68)| lr:1.00e-02| loss_qfl:0.2570| loss_bbox:0.4442| loss_dfl:0.2046| [0m
+[1m[35m[root][0m[34m[12-23 14:27:01][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1190(78)| lr:1.00e-02| loss_qfl:0.2781| loss_bbox:0.4855| loss_dfl:0.2117| [0m
+[1m[35m[root][0m[34m[12-23 14:27:07][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1200(88)| lr:1.00e-02| loss_qfl:0.2673| loss_bbox:0.4588| loss_dfl:0.2042| [0m
+[1m[35m[root][0m[34m[12-23 14:27:13][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1210(98)| lr:1.00e-02| loss_qfl:0.2823| loss_bbox:0.4554| loss_dfl:0.2036| [0m
+[1m[35m[root][0m[34m[12-23 14:27:19][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1220(108)| lr:1.00e-02| loss_qfl:0.2910| loss_bbox:0.4831| loss_dfl:0.2127| [0m
+[1m[35m[root][0m[34m[12-23 14:27:24][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1230(118)| lr:1.00e-02| loss_qfl:0.2672| loss_bbox:0.4545| loss_dfl:0.2056| [0m
+[1m[35m[root][0m[34m[12-23 14:27:29][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1240(128)| lr:1.00e-02| loss_qfl:0.2822| loss_bbox:0.4418| loss_dfl:0.2042| [0m
+[1m[35m[root][0m[34m[12-23 14:27:34][0m[32mINFO:[0m[37mTrain|Epoch9/700|Iter1250(138)| lr:1.00e-02| loss_qfl:0.2747| loss_bbox:0.4706| loss_dfl:0.2073| [0m
+[1m[35m[root][0m[34m[12-23 14:27:46][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1260(9)| lr:1.00e-02| loss_qfl:0.2536| loss_bbox:0.4505| loss_dfl:0.2054| [0m
+[1m[35m[root][0m[34m[12-23 14:27:52][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1270(19)| lr:1.00e-02| loss_qfl:0.2248| loss_bbox:0.4573| loss_dfl:0.2068| [0m
+[1m[35m[root][0m[34m[12-23 14:27:58][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1280(29)| lr:1.00e-02| loss_qfl:0.2657| loss_bbox:0.4575| loss_dfl:0.2037| [0m
+[1m[35m[root][0m[34m[12-23 14:28:05][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1290(39)| lr:1.00e-02| loss_qfl:0.2849| loss_bbox:0.4895| loss_dfl:0.2190| [0m
+[1m[35m[root][0m[34m[12-23 14:28:11][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1300(49)| lr:1.00e-02| loss_qfl:0.2469| loss_bbox:0.4841| loss_dfl:0.2078| [0m
+[1m[35m[root][0m[34m[12-23 14:28:17][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1310(59)| lr:1.00e-02| loss_qfl:0.2562| loss_bbox:0.4244| loss_dfl:0.1917| [0m
+[1m[35m[root][0m[34m[12-23 14:28:24][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1320(69)| lr:1.00e-02| loss_qfl:0.2827| loss_bbox:0.4405| loss_dfl:0.2002| [0m
+[1m[35m[root][0m[34m[12-23 14:28:30][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1330(79)| lr:1.00e-02| loss_qfl:0.2509| loss_bbox:0.4504| loss_dfl:0.2018| [0m
+[1m[35m[root][0m[34m[12-23 14:28:37][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1340(89)| lr:1.00e-02| loss_qfl:0.2426| loss_bbox:0.4928| loss_dfl:0.2136| [0m
+[1m[35m[root][0m[34m[12-23 14:28:44][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1350(99)| lr:1.00e-02| loss_qfl:0.2604| loss_bbox:0.4411| loss_dfl:0.2001| [0m
+[1m[35m[root][0m[34m[12-23 14:28:49][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1360(109)| lr:1.00e-02| loss_qfl:0.2855| loss_bbox:0.4730| loss_dfl:0.2072| [0m
+[1m[35m[root][0m[34m[12-23 14:28:54][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1370(119)| lr:1.00e-02| loss_qfl:0.2657| loss_bbox:0.4535| loss_dfl:0.2018| [0m
+[1m[35m[root][0m[34m[12-23 14:28:59][0m[32mINFO:[0m[37mTrain|Epoch10/700|Iter1380(129)| lr:1.00e-02| loss_qfl:0.2570| loss_bbox:0.4590| loss_dfl:0.2022| [0m
+[1m[35m[root][0m[34m[12-23 14:29:07][0m[32mINFO:[0m[37mVal|Epoch10/700|Iter1389(0)| lr:1.00e-02| loss_qfl:0.2713| loss_bbox:0.4514| loss_dfl:0.2058| [0m
+[1m[35m[root][0m[34m[12-23 14:29:12][0m[32mINFO:[0m[37mVal|Epoch10/700|Iter1389(10)| lr:1.00e-02| loss_qfl:0.2644| loss_bbox:0.4521| loss_dfl:0.1962| [0m
+Loading and preparing results...
+DONE (t=0.37s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.83s).
+Accumulating evaluation results...
+DONE (t=0.70s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.394
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.744
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.375
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.316
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.410
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.322
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.366
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.519
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.523
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.583
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.451
+[1m[35m[root][0m[34m[12-23 14:29:25][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1390(0)| lr:1.00e-02| loss_qfl:0.2640| loss_bbox:0.4502| loss_dfl:0.2052| [0m
+[1m[35m[root][0m[34m[12-23 14:29:33][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1400(10)| lr:1.00e-02| loss_qfl:0.2562| loss_bbox:0.4392| loss_dfl:0.1998| [0m
+[1m[35m[root][0m[34m[12-23 14:29:39][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1410(20)| lr:1.00e-02| loss_qfl:0.2271| loss_bbox:0.4567| loss_dfl:0.2042| [0m
+[1m[35m[root][0m[34m[12-23 14:29:47][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1420(30)| lr:1.00e-02| loss_qfl:0.2530| loss_bbox:0.4692| loss_dfl:0.2043| [0m
+[1m[35m[root][0m[34m[12-23 14:29:53][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1430(40)| lr:1.00e-02| loss_qfl:0.2567| loss_bbox:0.4998| loss_dfl:0.2157| [0m
+[1m[35m[root][0m[34m[12-23 14:30:00][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1440(50)| lr:1.00e-02| loss_qfl:0.2409| loss_bbox:0.4428| loss_dfl:0.1977| [0m
+[1m[35m[root][0m[34m[12-23 14:30:07][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1450(60)| lr:1.00e-02| loss_qfl:0.2317| loss_bbox:0.4423| loss_dfl:0.1992| [0m
+[1m[35m[root][0m[34m[12-23 14:30:13][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1460(70)| lr:1.00e-02| loss_qfl:0.2533| loss_bbox:0.4402| loss_dfl:0.2020| [0m
+[1m[35m[root][0m[34m[12-23 14:30:20][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1470(80)| lr:1.00e-02| loss_qfl:0.2468| loss_bbox:0.4665| loss_dfl:0.2022| [0m
+[1m[35m[root][0m[34m[12-23 14:30:26][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1480(90)| lr:1.00e-02| loss_qfl:0.2603| loss_bbox:0.4566| loss_dfl:0.2007| [0m
+[1m[35m[root][0m[34m[12-23 14:30:32][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1490(100)| lr:1.00e-02| loss_qfl:0.2694| loss_bbox:0.4387| loss_dfl:0.2025| [0m
+[1m[35m[root][0m[34m[12-23 14:30:37][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1500(110)| lr:1.00e-02| loss_qfl:0.2452| loss_bbox:0.4501| loss_dfl:0.2024| [0m
+[1m[35m[root][0m[34m[12-23 14:30:42][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1510(120)| lr:1.00e-02| loss_qfl:0.2338| loss_bbox:0.4559| loss_dfl:0.2032| [0m
+[1m[35m[root][0m[34m[12-23 14:30:48][0m[32mINFO:[0m[37mTrain|Epoch11/700|Iter1520(130)| lr:1.00e-02| loss_qfl:0.2294| loss_bbox:0.4272| loss_dfl:0.1942| [0m
+[1m[35m[root][0m[34m[12-23 14:30:59][0m[32mINFO:[0m[37mTrain|Epoch12/700|Iter1530(1)| lr:1.00e-02| loss_qfl:0.2493| loss_bbox:0.4549| loss_dfl:0.2029| [0m
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/trainer/trainer.py:895: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn('Detected KeyboardInterrupt, attempting graceful shutdown...')

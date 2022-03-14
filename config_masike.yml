@@ -1,0 +1,35 @@
+#nniManagerIp: 172.17.0.18
+nniManagerIp: 127.0.0.1  
+experimentName: nanodet_NNI_SS
+searchSpaceFile: search_space.json
+trialCommand: nohup  python3  train.py   config/nanodet-m-pose.yml   >>  mylog_ss.txt  2>&1 
+trialGpuNumber: 1
+trialConcurrency: 8
+experimentWorkingDirectory: '/app/nanodet/nni_experiments'
+maxTrialNumber: 20
+useAnnotation: false
+#nniManagerIp: 10.10.30.25
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: maximize
+trainingService:
+  platform: remote
+  machineList:
+    - host: 10.10.30.25
+      port: 8882
+      user: root
+      password: masike
+      maxTrialNumberPerGpu: 4
+      gpuIndices: 0,1
+      useActiveGpu: true
+      #ssh_key_file: ~/.ssh/id_rsa  # We recommend public key over password, it's more secure and convenient.
+    # You can specify more than one SSH servers:
+    # - host: 10.10.30.25
+    #   port: 8888
+    #   user: masike
+    #   password: masike
+    #   pythonPath: /usr/bin  # Other examples:
+    #                         #   /opt/python3.9/bin
+    #                         #   C:/Python39
+    #                         #   C:/Users/USERNAME/.conda/envs/ENVNAME;C:/Users/USERNAME/.conda/envs/ENVNAME/Scripts;C:/Users/USERNAME/.conda/envs/ENVNAME/Library/bin

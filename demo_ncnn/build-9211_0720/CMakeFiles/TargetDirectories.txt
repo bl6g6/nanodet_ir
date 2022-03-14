@@ -1,0 +1,3 @@
+/home/masike/server_masike/nanodet/demo_ncnn/build-9211_0720/CMakeFiles/rebuild_cache.dir
+/home/masike/server_masike/nanodet/demo_ncnn/build-9211_0720/CMakeFiles/edit_cache.dir
+/home/masike/server_masike/nanodet/demo_ncnn/build-9211_0720/CMakeFiles/nanodet_demo.dir

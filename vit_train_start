@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 nohup  python3  train.py   config/nanodet-m-pose_vit.yml   >>  mylog-vit3.txt  2>&1 

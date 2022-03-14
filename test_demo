@@ -1,0 +1,2 @@
+python3 demo.py image --config config/nanodet-m-pose.yml --model ./workspace/nanodet_m_pose_Adam/model_best/model_best.ckpt --path   ./s_fov --save_result
+

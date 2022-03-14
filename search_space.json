@@ -1,0 +1,3 @@
+{
+    "cfg.schedule.optimizer.lr": {"_type":"choice", "_value": [0.01, 0.1, 0.001, 0.5]}
+}

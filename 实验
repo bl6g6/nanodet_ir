@@ -1,0 +1,11 @@
+mylog-vit: silu训练
+mylog-vit2: leakyrelu训练
+    dims = [48, 48, 64]
+    channels = [16, 16, 24, 24, 32, 32, 48, 48, 64, 64, 320]
+    return MobileViT((320, 320), dims, channels, num_classes=4, expansion=2)
+    mnn-193ms-rv1126
+mylog-vit3: 
+      dims: [32, 48, 64]
+      channels: [16, 16, 24, 24, 32, 32, 48, 48, 64, 64]
+      expansion: 1
+    mnn-138ms-rv1126

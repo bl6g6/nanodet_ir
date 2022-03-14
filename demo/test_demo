@@ -1,0 +1,2 @@
+python3 demo.py image --config ../config/nanodet-m-persion.yml --model ../workspace/nanodet_m_persion/model_best/model_best.ckpt --path   ../img   --save_result
+# python3 demo.py video --config ../config/nanodet-m-persion.yml --model ../workspace/nanodet_m_persion/model_last.ckpt --path ../demo1.mp4

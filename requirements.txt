@@ -1,0 +1,13 @@
+torch==1.6
+Cython
+termcolor
+numpy
+torchvision
+tensorboard
+pycocotools
+matplotlib
+pyaml
+opencv-python==3.4.13.47
+tqdm
+pytorch-lightning>=1.2.5
+torchmetrics
